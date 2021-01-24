@@ -12,7 +12,10 @@ import Home from "./views/Home";
 // import Product from "./views/Product";
 
 // Initialize Google Analytics
-ReactGA.initialize(process.env.REACT_APP_GA_CODE);
+ReactGA.initialize(process.env.REACT_APP_GA_CODE, {
+    debug: true,
+    siteSpeedSampleRate: 1000,
+});
 
 const trackPage = (page) => {
     ReactGA.set({ page });
