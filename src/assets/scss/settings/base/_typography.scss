@@ -1,12 +1,12 @@
 // Typography
 
 $font--provider: "Google Fonts";
-$font--import: "Inter:200,400,500,600,700,800";
+$font--import: "Inter:100,200,400,500,600,700,800,900";
 
 // The font set
 $font--family: (
-    heading: null,
-    base: '"Inter", sans-serif',
+    heading: '"Roboto", sans-serif',
+    base: '"Roboto", sans-serif',
     code: 'Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace',
     pre: '"Courier 10 Pitch", Courier, monospace',
 );
@@ -14,9 +14,13 @@ $font--family: (
 // The typographic scale
 $font--scale: (
     // key 		// font-size, line-height, kerning
-        alpha: (200px, 250px, -15px),
-    beta: (80px, 100px, -5px),
-    gamma: (32px, 42px, -0.3px),
+    alpha: (250px, 150px, -20px),
+    alphaMobile: (100px, 100px, -10px),
+
+    beta: (150px, 100px, -10px),
+    betaMobile: (70px, 65px, -5px),
+
+    gamma: (60px, 60px, -3px),
     delta: (24px, 34px, -0.1px),
     epsilon: (20px, 30px, -0.1px),
     zeta: (18px, 28px, -0.1px),
@@ -27,9 +31,9 @@ $font--scale: (
 // Base elements: font size
 $font--size: (
     // ↓ Mobile 	// key in $font--scale
-        h1: "beta",
-    h2: "gamma",
-    h3: "delta",
+    h1: "alphaMobile",
+    h2: "betaMobile",
+    h3: "gamma",
     h4: "delta",
     base: "epsilon",
     sm: "zeta",
@@ -41,13 +45,13 @@ $font--size: (
     pre: "eta",
     table: "eta",
     // ↓ Desktop (set to null if font size won't change on desktop)
-        h1-desktop: "alpha",
-    h2-desktop: "beta",
-    h3-desktop: "gamma",
+    h1-desktop: "alpha",
+    h2-desktop: null,
+    h3-desktop: null,
     h4-desktop: null,
     base-desktop: null,
     sm-desktop: null,
-    xs-desktop: "theta",
+    xs-desktop: null,
     xxs-desktop: null,
     bquote-desktop: null,
     figcap-desktop: null,
@@ -58,8 +62,9 @@ $font--size: (
 
 // Base elements: font weight
 $font--weight: (
-    heading: 800,
-    base: 200,
+    heading: 900,
+    base: 100,
+    thin: 100,
     strong: 700,
     bquote: 600,
     figcap: null,

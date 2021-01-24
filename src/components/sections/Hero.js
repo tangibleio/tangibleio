@@ -23,9 +23,9 @@ const Hero = ({
     const outerClasses = classNames(
         "illustration-section-01",
         "hero section",
-        // "center-content",
-        // topOuterDivider && "has-top-divider",
-        // bottomOuterDivider && "has-bottom-divider",
+        "center-content",
+        topOuterDivider && "has-top-divider",
+        bottomOuterDivider && "has-bottom-divider",
         hasBgColor && "has-bg-color",
         className
     );
@@ -42,35 +42,31 @@ const Hero = ({
                 <div className={innerClasses}>
                     <div className="hero-content">
                         <h1
-                            className="mt-0 mb-16 reveal-from-bottom"
-                            data-reveal-delay="200"
+                            data-reveal-delay="100"
+                            className="mt-0 mb-16 reveal-scale-down"
                         >
                             tangible
                         </h1>
-
                         <h3
-                            className="fw-400 reveal-from-top"
-                            data-reveal-delay="1500"
+                            className="fw-100 mb-16 spacer-64 reveal-scale-down"
+                            data-reveal-delay="700"
                         >
-                            you are about to witness the
-                            <div />
-                            strength of street knowledge
+                            “you are about to witness the strength of street
+                            knowledge.”
                         </h3>
-                        <p
-                            className="fw-100 text-s reveal-from-top"
-                            data-reveal-delay="2050"
+                        <h6
+                            className="reveal-scale-down mb-0 fw-300"
+                            data-reveal-delay="800"
                         >
-                            Dr. Dre, Straight Outta Compton, 1998
-                        </p>
+                            Straight Outta Compton, 1998
+                        </h6>
+                        <h4
+                            className="spacer-64 reveal-scale-down mt-0 mb-16 fw-200"
+                            data-reveal-delay="1000"
+                        >
+                            coming soon.
+                        </h4>
                     </div>
-
-                    <h4
-                        className="spacer-64 reveal-from-top"
-                        data-reveal-delay="2000"
-                    >
-                        coming soon.
-                    </h4>
-                   
                 </div>
             </div>
         </section>

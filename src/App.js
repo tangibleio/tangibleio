@@ -13,7 +13,7 @@ import Home from "./views/Home";
 
 // Initialize Google Analytics
 ReactGA.initialize(process.env.REACT_APP_GA_CODE, {
-    debug: true,
+    debug: false,
     siteSpeedSampleRate: 1000,
 });
 
@@ -45,7 +45,7 @@ const App = () => {
                         component={Home}
                         layout={LayoutDefault}
                     />
-                    {/* <AppRoute exact path="/Product" component={Product} layout={LayoutDefault} /> */}
+                    {/* <AppRoute exact path="/Product" component={Product} layout={LayoutDefault} />  */}
                 </Switch>
             )}
         />
