@@ -53,7 +53,7 @@ const Hero = ({
                                 className="m-0 mt-64 reveal-from-left"
                                 data-reveal-delay="200"
                             >
-                                Tangible helps location-driven businesses strive
+                                help location-driven businesses strive
                                 by predicting how people move.
                             </h3>
                             <div

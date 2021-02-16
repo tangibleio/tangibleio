@@ -114,21 +114,20 @@ const Header = ({
                                                 `header-nav-${navPosition}`
                                         )}
                                     >
-                                    
                                         <li>
                                             <Link
-                                                to="/"
+                                                to="#features"
                                                 onClick={closeMenu}
                                             >
-                                                Tangible
+                                                Features
                                             </Link>
                                         </li>
                                         <li>
                                             <Link
-                                                to="/Product"
+                                                to="#team"
                                                 onClick={closeMenu}
                                             >
-                                                Product
+                                                Team
                                             </Link>
                                         </li>
                                     </ul>

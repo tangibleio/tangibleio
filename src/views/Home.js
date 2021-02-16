@@ -6,11 +6,12 @@ import FeaturesTiles from "../components/sections/FeaturesTiles";
 
 const Home = () => {
     return (
+        // ! id are used by router for in-page routing
         <>
             <Hero />
             <Dre split />
-            <FeaturesSplit />
-            <FeaturesTiles/>
+            <FeaturesSplit id="features" />
+            <FeaturesTiles id="team" />
         </>
     );
 };

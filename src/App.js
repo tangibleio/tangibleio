@@ -27,7 +27,21 @@ const App = () => {
     let location = useLocation();
 
     useEffect(() => {
+        // ! https://stackoverflow.com/questions/40280369/use-anchors-with-react-router
+
         const page = location.pathname;
+        const hash = location.hash;
+        if (hash === "") {
+            window.scrollTo(0, 0);
+        } else {
+            setTimeout(() => {
+                const id = hash.replace("#", "");
+                const element = document.getElementById(id);
+                if (element) {
+                    element.scrollIntoView();
+                }
+            }, 0);
+        }
         document.body.classList.add("is-loaded");
         childRef.current.init();
         trackPage(page);
