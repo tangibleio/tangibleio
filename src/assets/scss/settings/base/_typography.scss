@@ -1,21 +1,21 @@
 // Typography
 
 $font--provider: "Google Fonts";
-$font--import: "IBM+Plex+Sans:100,200,400,500,600,700,800,900";
+$font--import: "Roboto:100,200,400,500,600,700,800,900";
 
 // The font set
 $font--family: (
-    heading: '"IBM Plex Sans", sans-serif',
-    base: '"IBM Plex Sans", sans-serif',
+    heading: '"Roboto", sans-serif',
+    base: '"Roboto", sans-serif',
     code: 'Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace',
-    pre: '"IBM Plex Sans", Courier, monospace',
+    pre: '"Roboto", Courier, monospace',
 );
 
 // The typographic scale
 $font--scale: (
     // key 		// font-size, line-height, kerning
-    heroTitle: (200px, 250px, -20px),
-    heroTitleMobile: (100px, 125px, -10px),
+    heroTitle: (200px, 250px, -15px),
+    heroTitleMobile: (100px, 125px, -8px),
     alpha: (52px, 62px, -0.3px),
     beta: (44px, 54px, -0.3px),
     gamma: (32px, 42px, -0.3px),

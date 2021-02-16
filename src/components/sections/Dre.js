@@ -34,8 +34,6 @@ const content = (
                 storefronts. Tangible is an AI Location Intelligence platform
                 that analyses behavioral, spatial, demographic, and economic
                 data, to infer and simulate city-scale population behavior.
-                Tangible stems from years of research at MIT and a proven,
-                multinational entrepreneurial team.
             </p>
         </div>
     </>

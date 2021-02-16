@@ -27,7 +27,12 @@ const Footer = ({ className, topOuterDivider, topDivider, ...props }) => {
                 <div className={classNames("site-footer-inner")}>
                     <div className="footer-bottom space-between text-xxs ">
                         {/* <FooterSocial /> */}
-                        <h6 className={'invert-color'}>Coming soon from MIT.</h6>
+
+                        <h6 className="fw-100 invert-color">
+                            Tangible stems from years of research at MIT and a
+                            proven, multinational entrepreneurial team.
+                        </h6>
+                        <h6 className="invert-color">Coming soon.</h6>
                         {/* <FooterNav /> */}
                     </div>
                 </div>

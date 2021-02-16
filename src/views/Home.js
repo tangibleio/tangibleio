@@ -2,6 +2,7 @@ import React from "react";
 import Hero from "../components/sections/Hero";
 import FeaturesSplit from "../components/sections/FeaturesSplit";
 import Dre from "../components/sections/Dre";
+import FeaturesTiles from "../components/sections/FeaturesTiles";
 
 const Home = () => {
     return (
@@ -9,6 +10,7 @@ const Home = () => {
             <Hero />
             <Dre split />
             <FeaturesSplit />
+            <FeaturesTiles/>
         </>
     );
 };
