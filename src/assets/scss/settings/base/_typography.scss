@@ -29,7 +29,6 @@ $font--scale: (
 // Base elements: font size
 $font--size: (
     // ↓ Mobile 	// key in $font--scale
-
     h1: "heroTitleMobile",
     h2: "gamma",
     h3: "delta",
@@ -45,7 +44,7 @@ $font--size: (
     table: "eta",
     // ↓ Desktop (set to null if font size won't change on desktop)
     h1-desktop: "heroTitle",
-    h2-desktop: "beta",
+    h2-desktop: "heroTitleMobile",
     h3-desktop: "gamma",
     h4-desktop: null,
     base-desktop: null,
