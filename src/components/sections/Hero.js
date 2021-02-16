@@ -40,20 +40,22 @@ const Hero = ({
             <div className="container-fh">
                 <div className={innerClasses}>
                     <div className="hero-content">
-                        <h1
-                            data-reveal-delay="100"
-                            className="mt-0 mb-16 reveal-scale-down"
-                        >
-                            tangible
-                        </h1>
+                
                         <div className="container-xs">
-                            <h2
-                                className="m-0 mb-64 reveal-from-bottom"
-                                data-reveal-delay="400"
+                            <h1
+                                data-reveal-delay="300"
+                                className="mt-0 mb-16 reveal-scale-down"
                             >
-                                location-driven businesses strive when they know
-                                how people move.
-                            </h2>
+                                tangible
+                            </h1>
+
+                            <h3
+                                className="m-0 mt-64 reveal-from-left"
+                                data-reveal-delay="200"
+                            >
+                                Tangible helps location-driven businesses strive
+                                by predicting how people move.
+                            </h3>
                             <div
                                 className="reveal-from-bottom"
                                 data-reveal-delay="600"

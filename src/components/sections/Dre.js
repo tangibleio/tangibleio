@@ -15,26 +15,29 @@ const defaultProps = {
 
 const content = (
     <>
-        <h2
-            className="fw-900 invert-color reveal-scale-down"
-            data-reveal-delay="700"
-        >
-            “ you are about to witness the strength of street knowledge. ”
-        </h2>
-        <h6
-            className="reveal-scale-down invert-color mb-0 fw-200"
-            data-reveal-delay="800"
-        >
-            Straight Outta Compton, 1998
-        </h6>
-        <p  className="reveal-scale-down invert-color mt-32 fw-500">
-            Online retailers have great visibility into their clients’ activity,
-            but 'tangible' businesses are blind outside of their storefronts.
-            Tangible is an AI Location Intelligence platform that analyses
-            behavioral, spatial, demographic, and economic data, to infer and
-            simulate city-scale population behavior. Tangible stems from years
-            of research at MIT and a proven, multinational entrepreneurial team.
-        </p>
+        <div className="container-xs">
+            <h2
+                className="fw-900 invert-color reveal-scale-down"
+                data-reveal-delay="700"
+            >
+                “ you are about to witness the strength of street knowledge.”
+            </h2>
+            <h6
+                className="reveal-scale-down invert-color mb-0 fw-200"
+                data-reveal-delay="800"
+            >
+                Straight Outta Compton, 1998
+            </h6>
+            <p className="reveal-scale-down invert-color mt-32 fw-500">
+                Online retailers have great visibility into their clients’
+                activity, but 'tangible' businesses are blind outside of their
+                storefronts. Tangible is an AI Location Intelligence platform
+                that analyses behavioral, spatial, demographic, and economic
+                data, to infer and simulate city-scale population behavior.
+                Tangible stems from years of research at MIT and a proven,
+                multinational entrepreneurial team.
+            </p>
+        </div>
     </>
 );
 
@@ -67,9 +70,7 @@ const Dre = ({
 
     return (
         <section {...props} className={outerClasses}>
-            <div className={innerClasses}>
-                <div className="cta-slogan">{content}</div>
-            </div>
+            <div className={innerClasses}>{content}</div>
         </section>
     );
 };
