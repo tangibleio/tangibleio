@@ -20,7 +20,7 @@ const content = (
                 className="fw-900 invert-color reveal-scale-down"
                 data-reveal-delay="700"
             >
-                “ you are about to witness the strength of street knowledge.”
+                “you are about to witness the strength of street knowledge.”
             </h2>
             <h6
                 className="reveal-scale-down invert-color mb-0 fw-200"
