@@ -45,7 +45,7 @@ $color: (
     success: get-color(alert, success),
     // ↓ Inverted colors
         heading-inverse: get-color(dark, 1),
-    base-inverse: get-color(dark, 2),
+    base-inverse: get-color(light, 1),
     high-contrast-inverse: get-color(dark, 1),
     mid-contrast-inverse: get-color(dark, 2),
     low-contrast-inverse: get-color(light, 3),

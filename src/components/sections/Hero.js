@@ -23,10 +23,9 @@ const Hero = ({
     const outerClasses = classNames(
         "illustration-section-01",
         "hero section",
-        "center-content",
         topOuterDivider && "has-top-divider",
         bottomOuterDivider && "has-bottom-divider",
-        hasBgColor && "has-bg-color",
+        "has-bg-color",
         className
     );
 
@@ -38,7 +37,7 @@ const Hero = ({
 
     return (
         <section {...props} className={outerClasses}>
-            <div className="container-sm">
+            <div className="container-fh">
                 <div className={innerClasses}>
                     <div className="hero-content">
                         <h1
@@ -47,25 +46,19 @@ const Hero = ({
                         >
                             tangible
                         </h1>
-                        <h3
-                            className="fw-100 mb-16 spacer-64 reveal-scale-down"
-                            data-reveal-delay="700"
-                        >
-                            “you are about to witness the strength of street
-                            knowledge.”
-                        </h3>
-                        <h6
-                            className="reveal-scale-down mb-0 fw-300"
-                            data-reveal-delay="800"
-                        >
-                            Straight Outta Compton, 1998
-                        </h6>
-                        <h4
-                            className="spacer-64 reveal-scale-down mt-0 mb-16 fw-200"
-                            data-reveal-delay="1000"
-                        >
-                            coming soon.
-                        </h4>
+                        <div className="container-xs">
+                            <h2
+                                className="m-0 mb-64 reveal-from-bottom"
+                                data-reveal-delay="400"
+                            >
+                                location-driven businesses strive when they know
+                                how people move.
+                            </h2>
+                            <div
+                                className="reveal-from-bottom"
+                                data-reveal-delay="600"
+                            ></div>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -1,18 +1,15 @@
 .cta {
     .form-input {
-        border-color: transparent;
-        border-radius: 2px;
+        border-color: #000;
+        border-radius: 1px;
     }
 }
 
 .cta-inner {
     padding-left: 16px;
     padding-right: 16px;
-    background-color: get-color(primary, 3);
-    background-image: url(../../../images/bg.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: right bottom;
+    background-color: get-color(dark, 1);
+    
 }
 
 @include media(">medium") {
