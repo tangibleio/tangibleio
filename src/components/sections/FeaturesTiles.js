@@ -97,7 +97,7 @@ const FeaturesTiles = ({
                                         Data Scientist, spatial analytics, AI,
                                         modeling and predictions. Fulbright
                                         scholar, PhD in transportation
-                                        engineering
+                                        eng. and a post-doc at MIT
                                     </p>
                                 </div>
                             </div>

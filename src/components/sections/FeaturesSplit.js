@@ -131,15 +131,15 @@ const FeaturesSplit = ({
                                 data-reveal-container=".split-item"
                             >
                                 <div className="text-xxs  fw-600 tt-u mb-8">
-                                    explore spatial 'what if?' scenarios
+                                    explore 'what if?' scenarios
                                 </div>
                                 <h3 className="mt-0 mb-12">Transform</h3>
                                 <p className="m-0">
-                                    Understand the impact of various ‘what if?’
-                                    scenarios, such as spatial transformations
-                                    in business location, updated working-hours,
-                                    impact of near-by developments, and other
-                                    global events.
+                                    Tangible provides an iterative platform to
+                                    freely simulate future scenarios such as
+                                    increased or decreased foot-traffic, changes
+                                    to the clients’ demographics, policy
+                                    changes, and captial projects.
                                 </p>
                             </div>
                             <div
