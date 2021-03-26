@@ -38,16 +38,21 @@ const Hero = ({
 
     return (
         <section {...props} className={outerClasses}>
-            <div className="player-wrapper">
+            <div
+                className="video"
+                style={{
+                    position: "absolute",
+                    height: 0,
+                    zIndex: 0,
+                }}
+            >
                 <ReactPlayer
-                    className="react-player"
-                    url=""
-                    position="absolute"
-                    zIndex="-1"
-                    top="0"
-                    left="0"
+                    autoPlay={true}
+                    muted={true}
                     width="100vw"
                     height="100vh"
+                    className="react-player"
+                    url="https://www.youtube.com/watch?v=MVhauHKiEPA"
                 />
             </div>
             <div className="container-fh">
