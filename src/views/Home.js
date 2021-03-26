@@ -10,9 +10,10 @@ const Home = () => {
         // ! id are used by router for in-page routing
         <>
             <Hero />
-            <Cta/>
+
             <Dre split />
             <FeaturesSplit id="features" />
+            <Cta />
             <FeaturesTiles id="team" />
         </>
     );

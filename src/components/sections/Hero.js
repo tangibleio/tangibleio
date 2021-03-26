@@ -38,22 +38,18 @@ const Hero = ({
 
     return (
         <section {...props} className={outerClasses}>
-            <div
-                className="video"
-                style={{
-                    position: "absolute",
-                    height: 0,
-                    zIndex: 0,
-                }}
-            >
-                <ReactPlayer
-                    autoPlay={true}
-                    muted={true}
-                    width="100vw"
-                    height="100vh"
-                    className="react-player"
-                    url="https://www.youtube.com/watch?v=MVhauHKiEPA"
-                />
+            <div className="video-background">
+                <div className="video-foreground">
+                    <ReactPlayer
+                        url={"https://youtu.be/uUKIKml17AU"}
+                        playing={true}
+                        controls={false}
+                        muted
+                        loop
+                        width={"0em"}
+                        height={"0em"}
+                    />
+                </div>
             </div>
             <div className="container-fh">
                 <div className={innerClasses}>
@@ -61,12 +57,12 @@ const Hero = ({
                         <div className="container-xs">
                             <h1
                                 data-reveal-delay="300"
-                                className="mt-0 mb-16 reveal-scale-down"
+                                className="mt-0 mb-16 reveal-scale-down invert-color"
                             >
                                 tangible
                             </h1>
                             <h3
-                                className="m-0 mt-64 mb-64 reveal-from-left"
+                                className="m-0 mt-64 mb-64 reveal-from-left invert-color "
                                 data-reveal-delay="200"
                             >
                                 help location-driven businesses strive by
@@ -74,10 +70,10 @@ const Hero = ({
                             </h3>
 
                             <h6
-                                className="mt-64 mb-64 reveal-from-right"
+                                className="mt-64 mb-64 reveal-from-right invert-color "
                                 data-reveal-delay="300"
                             >
-                                Coming soon from MIT
+                                Coming soon from MIT.
                             </h6>
                         </div>
                     </div>
