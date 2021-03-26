@@ -10,7 +10,6 @@ const Home = () => {
         // ! id are used by router for in-page routing
         <>
             <Hero />
-
             <Dre split />
             <FeaturesSplit id="features" />
             <Cta />

@@ -71,21 +71,28 @@ const Header = ({
         closeMenu();
     };
 
+    const [top, setTop] = useState(true);
+
+    // detect whether user has scrolled the page down by 10px
+    useEffect(() => {
+        const scrollHandler = () => {
+            window.pageYOffset > "500" ? setTop(false) : setTop(true);
+        };
+        window.addEventListener("scroll", scrollHandler);
+        return () => window.removeEventListener("scroll", scrollHandler);
+    }, [top]);
+
     const classes = classNames(
+        !top && "nav-bar-bg-color",
+
         "site-header",
-        bottomOuterDivider && "has-bottom-divider",
-        className
+        bottomOuterDivider && "has-bottom-divider"
     );
 
     return (
         <header {...props} className={classes}>
             <div className="container">
-                <div
-                    className={classNames(
-                        "site-header-inner",
-                        bottomDivider && "has-bottom-divider"
-                    )}
-                >
+                <div className={classNames("site-header-inner")}>
                     {!hideNav && (
                         <>
                             <button
