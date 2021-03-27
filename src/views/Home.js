@@ -11,7 +11,7 @@ const Home = () => {
         <>
             <Hero />
             <Dre split />
-            <Cta />
+            <Cta id="contact" />
             <FeaturesSplit id="features" />
             <FeaturesTiles id="team" />
         </>

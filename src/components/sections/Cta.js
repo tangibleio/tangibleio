@@ -46,11 +46,15 @@ const Cta = ({
                 <div className="container-xs">
                     <div className={innerClasses}>
                         <div className="cta-slogan">
-                            <h4 className="invert-color m-0">
-                                Coming soon from MIT. Get Tangible today.
-                            </h4>
+                            <h3 className="invert-color m-0">
+                                Tangible is coming soon from MIT.
+                            </h3>
+
+                            <h6 className="invert-color">
+                                learn more at info@tangibledata.io
+                            </h6>
                         </div>
-                        <div className="cta-action">
+                        {/* <div className="cta-action">
                             <Input
                                 id="newsletter"
                                 hint="Your information will never be shared."
@@ -71,7 +75,7 @@ const Cta = ({
                                     />
                                 </svg>
                             </Input>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </div>
