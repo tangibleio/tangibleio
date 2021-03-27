@@ -84,7 +84,7 @@ const Header = ({
 
     const classes = classNames(
         !top && "nav-bar-bg-color",
-
+        top && "reveal-from-top invert-color",
         "site-header",
         bottomOuterDivider && "has-bottom-divider"
     );
