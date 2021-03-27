@@ -11,8 +11,8 @@ const Home = () => {
         <>
             <Hero />
             <Dre split />
-            <FeaturesSplit id="features" />
             <Cta />
+            <FeaturesSplit id="features" />
             <FeaturesTiles id="team" />
         </>
     );

@@ -37,49 +37,44 @@ const Hero = ({
     );
 
     return (
-        <section {...props} className={outerClasses}>
-            <div className="video-background">
-                <div className="video-foreground">
-                    <ReactPlayer
-                        url={"https://youtu.be/uUKIKml17AU"}
-                        playing={true}
-                        controls={false}
-                        muted
-                        loop
-                        width={"0em"}
-                        height={"0em"}
-                    />
-                </div>
-            </div>
-            <div className="container-fh">
-                <div className={innerClasses}>
-                    <div className="hero-content">
-                        <div className="container-xs">
-                            <h1
-                                data-reveal-delay="300"
-                                className="mt-0 mb-16 reveal-scale-down invert-color"
-                            >
-                                tangible
-                            </h1>
-                            <h3
-                                className="m-0 mt-64 mb-64 reveal-from-left invert-color "
-                                data-reveal-delay="200"
-                            >
-                                help location-driven businesses strive by
-                                predicting how people move.
-                            </h3>
-
-                            <h6
-                                className="mt-64 mb-64 reveal-from-right invert-color "
-                                data-reveal-delay="300"
-                            >
-                                Coming soon from MIT.
-                            </h6>
+        <>
+            <section {...props} className={outerClasses}>
+                <div className="container-fh">
+                    <div className="video-background">
+                        <div className="video-foreground">
+                            <ReactPlayer
+                                url={"https://youtu.be/uUKIKml17AU"}
+                                playing={true}
+                                controls={false}
+                                muted
+                                loop
+                                width={"0em"}
+                                height={"0em"}
+                            />
+                        </div>
+                    </div>
+                    <div className={innerClasses}>
+                        <div className="hero-content">
+                            <div className="container-xs">
+                                <h1
+                                    data-reveal-delay="300"
+                                    className="mt-0 mb-16 reveal-scale-down invert-color"
+                                >
+                                    tangible
+                                </h1>
+                                <h3
+                                    className="m-0 mt-64  reveal-from-left invert-color "
+                                    data-reveal-delay="200"
+                                >
+                                    help location-driven businesses strive by
+                                    predicting how people move.
+                                </h3>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </>
     );
 };
 
