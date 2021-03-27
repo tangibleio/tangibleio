@@ -53,6 +53,7 @@ const Cta = ({
                         <div className="cta-action">
                             <Input
                                 id="newsletter"
+                                hint="Your information will never be shared."
                                 type="email"
                                 label="Subscribe"
                                 labelHidden
