@@ -2,6 +2,7 @@ import React from "react";
 import classNames from "classnames";
 import { SectionProps } from "../../utils/SectionProps";
 import ReactPlayer from "react-player";
+import Cta from "../../components/sections/Cta";
 
 const propTypes = {
     ...SectionProps.types,
@@ -39,7 +40,7 @@ const Hero = ({
     return (
         <>
             <section {...props} className={outerClasses}>
-                <div className="container-fh">
+                <div className="container">
                     <div className="video-background">
                         <div className="video-foreground">
                             <ReactPlayer
@@ -69,6 +70,8 @@ const Hero = ({
                                     help location-driven businesses strive by
                                     predicting how people move.
                                 </h3>
+
+                                <Cta id="contact" />
                             </div>
                         </div>
                     </div>

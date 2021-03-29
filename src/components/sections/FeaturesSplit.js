@@ -50,6 +50,16 @@ const FeaturesSplit = ({
     return (
         <section {...props} className={outerClasses}>
             <div className="container">
+                <div className="container-sm">
+                    <p className="reveal-scale-down  mt-32 fw-500">
+                        Online retailers have great visibility into their
+                        clients’ activity, but tangible businesses are blind
+                        outside of their storefronts. Tangible is an AI Location
+                        Intelligence platform that analyses behavioral, spatial,
+                        demographic, and economic data, to infer and simulate
+                        city-scale population behavior.
+                    </p>
+                </div>
                 <div className={innerClasses}>
                     <div className={splitClasses}>
                         {/* START */}

@@ -32,7 +32,7 @@ const FeaturesTiles = ({
     );
 
     const innerClasses = classNames(
-        "features-tiles-inner section-inner pt-0",
+        "features-tiles-inner section-inner pt-64",
         topDivider && "has-top-divider",
         bottomDivider && "has-bottom-divider"
     );
@@ -51,6 +51,14 @@ const FeaturesTiles = ({
                 >
                     team
                 </h2>
+                <div className="container-sm">
+                    <p className="reveal-scale-down  mt-32 fw-500">
+                        Tangible stems from years of work on spatial modeling,
+                        simulation, Machine Learning and AI at MIT. Our founders
+                        come from interdisciplinary backgrounds, with a shared
+                        love to highly active and successful cities.
+                    </p>
+                </div>
                 <div className={innerClasses}>
                     <div className={tilesClasses}>
                         <div className="tiles-item reveal-from-bottom">
@@ -96,8 +104,8 @@ const FeaturesTiles = ({
                                     <p className="m-0 text-sm">
                                         Data Scientist, spatial analytics, AI,
                                         modeling and predictions. Fulbright
-                                        scholar, PhD in transportation
-                                        eng. and a post-doc at MIT
+                                        scholar, PhD in transportation eng. and
+                                        a post-doc at MIT
                                     </p>
                                 </div>
                             </div>

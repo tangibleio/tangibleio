@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import classNames from "classnames";
 import { SectionProps } from "../../utils/SectionProps";
-import Input from "../elements/Input";
+// import Input from "../elements/Input";
 
 const propTypes = {
     ...SectionProps.types,
@@ -47,11 +47,14 @@ const Cta = ({
                     <div className={innerClasses}>
                         <div className="cta-slogan">
                             <h3 className="invert-color m-0">
-                                Tangible is coming soon from MIT.
+                                Tangible is coming soon from MIT
                             </h3>
 
                             <h6 className="invert-color">
-                                learn more at info@tangibledata.io
+                                Interested? drop us a line at{" "}
+                                <a href="mailto: info@tangibledata.io">
+                                    info@tangibledata.io
+                                </a>
                             </h6>
                         </div>
                         {/* <div className="cta-action">

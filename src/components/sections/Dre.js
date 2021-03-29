@@ -28,16 +28,7 @@ const content = (
             >
                 Straight Outta Compton, 1998
             </h6>
-            <div className="container-xs">
-                <p className="reveal-scale-down invert-color mt-32 fw-500">
-                    Online retailers have great visibility into their clients’
-                    activity, but tangible businesses are blind outside of
-                    their storefronts. Tangible is an AI Location Intelligence
-                    platform that analyses behavioral, spatial, demographic, and
-                    economic data, to infer and simulate city-scale population
-                    behavior.
-                </p>
-            </div>
+           
         </div>
     </>
 );

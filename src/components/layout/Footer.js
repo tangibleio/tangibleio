@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import classNames from "classnames";
-// import FooterNav from "./partials/FooterNav";
+import FooterNav from "./partials/FooterNav";
 // import FooterSocial from "./partials/FooterSocial";
 
 const propTypes = {
@@ -25,15 +25,20 @@ const Footer = ({ className, topOuterDivider, topDivider, ...props }) => {
         <footer {...props} className={classes}>
             <div className="container">
                 <div className={classNames("site-footer-inner")}>
-                    <div className="footer-bottom space-between text-xxs ">
+                    <div className="footer-top space-between text-xxs">
+                        <h6 className="invert-color">Tangible</h6>
                         {/* <FooterSocial /> */}
 
-                        <h6 className="fw-100 invert-color">
-                            Tangible stems from years of research at MIT and a
-                            proven, multinational entrepreneurial team.
-                        </h6>
-                        <h6 className="invert-color">Coming soon.</h6>
-                        {/* <FooterNav /> */}
+                        <a href="mailto: info@tangibledata.io">
+                            info@tangibledata.io
+                        </a>
+                    </div>
+
+                    <div className="footer-bottom space-between text-xxs ">
+                        <div className="invert-color footer-copyright">
+                            Coming soon from MIT.
+                        </div>
+                        <FooterNav />
                     </div>
                 </div>
             </div>
