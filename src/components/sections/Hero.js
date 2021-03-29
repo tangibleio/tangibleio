@@ -23,7 +23,6 @@ const Hero = ({
     ...props
 }) => {
     const outerClasses = classNames(
-        "illustration-section-01",
         "hero section",
         topOuterDivider && "has-top-divider",
         bottomOuterDivider && "has-bottom-divider",
@@ -40,7 +39,7 @@ const Hero = ({
     return (
         <>
             <section {...props} className={outerClasses}>
-                <div className="container">
+                <div className="container-fh">
                     <div className="video-background">
                         <div className="video-foreground">
                             <ReactPlayer
