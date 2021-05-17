@@ -21,14 +21,7 @@ const PlatfromVideo = ({
   pushLeft,
   ...props
 }) => {
-  const outerClasses = classNames(
-    'features-tiles section',
-    topOuterDivider && 'has-top-divider',
-    bottomOuterDivider && 'has-bottom-divider',
-    hasBgColor && 'has-bg-color',
-    invertColor && 'invert-color',
-    className,
-  )
+  const outerClasses = classNames('features-tiles section')
 
   return (
     <section {...props} className={outerClasses}>
@@ -37,8 +30,9 @@ const PlatfromVideo = ({
           tangible
         </h2>
         <h4 data-reveal-delay="300" className="mt-32 mb-64 reveal-scale-down">
-          <p>Location Intelligence platform. Iterative, interactive, real-time.</p>
-    
+          <p>
+            Location Intelligence platform. Iterative, interactive, real-time.
+          </p>
         </h4>
         <div className="player-wrapper">
           <ReactPlayer
