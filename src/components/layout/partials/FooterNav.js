@@ -12,11 +12,11 @@ const FooterNav = ({ className, ...props }) => {
                     <Link to="/">Home</Link>
                 </li>
                 <li>
-                    <Link to="features">Features</Link>
+                    <Link to="/#features">Features</Link>
                 </li>
 
                 <li>
-                    <Link to="team">Team</Link>
+                    <Link to="/#team">Team</Link>
                 </li>
             </ul>
         </nav>

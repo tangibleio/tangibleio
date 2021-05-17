@@ -1,7 +1,6 @@
 import React from "react";
 import classNames from "classnames";
 import { SectionTilesProps } from "../../utils/SectionProps";
-// import SectionHeader from './partials/SectionHeader';
 import Image from "../elements/Image";
 
 const propTypes = {
@@ -47,12 +46,12 @@ const FeaturesTiles = ({
             <div className="container">
                 <h2
                     data-reveal-delay="300"
-                    className="mt-64 mb-64 reveal-scale-down"
+                    className="mt-64 mb-64  reveal-scale-down"
                 >
                     team
                 </h2>
                 <div className="container-sm">
-                    <p className="reveal-scale-down  mt-32 fw-500">
+                    <p className="reveal-scale-down mt-32 fw-500">
                         Tangible stems from years of work on spatial modeling,
                         simulation, Machine Learning and AI at MIT. Our founders
                         come from interdisciplinary backgrounds, with a shared

@@ -128,7 +128,7 @@ const Header = ({
                                         </li>
                                         <li>
                                             <Link
-                                                to="features"
+                                                to="/#features"
                                                 onClick={closeMenu}
                                             >
                                                 Features
@@ -136,7 +136,7 @@ const Header = ({
                                         </li>
 
                                         <li>
-                                            <Link to="team" onClick={closeMenu}>
+                                            <Link to="/#team" onClick={closeMenu}>
                                                 Team
                                             </Link>
                                         </li>
