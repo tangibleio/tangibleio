@@ -1,7 +1,6 @@
 import React from 'react'
 import classNames from 'classnames'
 import { SectionProps } from '../../utils/SectionProps'
-import ReactPlayer from 'react-player'
 
 const propTypes = {
   ...SectionProps.types,
@@ -23,10 +22,9 @@ const Hero = ({
 }) => {
   const outerClasses = classNames(
     'hero section',
-    topOuterDivider && 'has-top-divider',
-    bottomOuterDivider && 'has-bottom-divider',
     'has-bg-color',
     className,
+    'has-bg-color',
   )
 
   const innerClasses = classNames(
@@ -38,21 +36,18 @@ const Hero = ({
   return (
     <>
       <section {...props} className={outerClasses}>
+        <div className="vimeo-wrapper">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/uUKIKml17AU?rel=0;&controls=0&autoplay=1&mute=1&loop=1&playlist=uUKIKml17AU"
+            title="Tangible"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          ></iframe>
+        </div>
         <div className="container-fh">
-          <div className="video-background">
-            <div className="video-foreground">
-              <ReactPlayer
-                url={'https://youtu.be/uUKIKml17AU'}
-                playing={true}
-                controls={false}
-                muted
-                loop
-                width="100vw"
-                height="100vh"
-              />
-            </div>
-          </div>
-          {/* </div> */}
           <div className={innerClasses}>
             <div className="hero-content">
               <div className="container">
@@ -62,13 +57,13 @@ const Hero = ({
                 >
                   tangible
                 </h1>
-                <h2
+                <h3
                   className="m-0 mt-32 pt-64 reveal-from-left invert-color"
                   data-reveal-delay="200"
                 >
                   Location-driven businesses strive by predicting how people
                   move.
-                </h2>
+                </h3>
               </div>
             </div>
           </div>
