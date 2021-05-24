@@ -25,6 +25,7 @@ const Hero = ({
     'has-bg-color',
     className,
     'has-bg-color',
+
   )
 
   const innerClasses = classNames(
@@ -40,7 +41,7 @@ const Hero = ({
           <iframe
             width="560"
             height="315"
-            src="https://www.youtube.com/embed/uUKIKml17AU?rel=0;&controls=0&autoplay=1&mute=1&loop=1&playlist=uUKIKml17AU"
+            src="https://www.youtube.com/embed/uUKIKml17AU?rel=0&controls=0&autoplay=1&mute=1&loop=1&playlist=uUKIKml17AU"
             title="Tangible"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
