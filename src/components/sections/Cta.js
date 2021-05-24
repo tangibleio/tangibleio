@@ -1,63 +1,59 @@
-import React from "react";
-import PropTypes from "prop-types";
-import classNames from "classnames";
-import { SectionProps } from "../../utils/SectionProps";
+import React from 'react'
+import PropTypes from 'prop-types'
+import classNames from 'classnames'
+import { SectionProps } from '../../utils/SectionProps'
 // import Input from "../elements/Input";
 
 const propTypes = {
-    ...SectionProps.types,
-    split: PropTypes.bool,
-};
+  ...SectionProps.types,
+  split: PropTypes.bool,
+}
 
 const defaultProps = {
-    ...SectionProps.defaults,
-    split: false,
-};
+  ...SectionProps.defaults,
+  split: false,
+}
 
 const Cta = ({
-    className,
-    topOuterDivider,
-    bottomOuterDivider,
-    topDivider,
-    bottomDivider,
-    hasBgColor,
-    invertColor,
-    split,
-    ...props
+  className,
+  topOuterDivider,
+  bottomOuterDivider,
+  topDivider,
+  bottomDivider,
+  hasBgColor,
+  invertColor,
+  split,
+  ...props
 }) => {
-    const outerClasses = classNames(
-        "cta section center-content-mobile reveal-from-bottom",
-        topOuterDivider && "has-top-divider",
-        bottomOuterDivider && "has-bottom-divider",
-        invertColor && "invert-color",
-        className
-    );
+  const outerClasses = classNames(
+    'cta section center-content-mobile reveal-from-bottom',
+    topOuterDivider && 'has-top-divider',
+    bottomOuterDivider && 'has-bottom-divider',
+    invertColor && 'invert-color',
+    className,
+  )
 
-    const innerClasses = classNames(
-        "cta-inner section-inner has-shadow",
-        topDivider && "has-top-divider",
-        bottomDivider && "has-bottom-divider",
-        split && "cta-split"
-    );
+  const innerClasses = classNames(
+    'cta-inner section-inner has-shadow',
+    topDivider && 'has-top-divider',
+    bottomDivider && 'has-bottom-divider',
+    split && 'cta-split',
+  )
 
-    return (
-        <section {...props} className={outerClasses}>
-            <div className="spacer-64">
-                <div className="container-xs">
-                    <div className={innerClasses}>
-                        <div className="cta-slogan">
-                            <h3 className="invert-color m-0">
-                                Tangible is coming soon from MIT
-                            </h3>
+  return (
+    <section {...props} className={outerClasses}>
+      <div className="spacer-64">
+        <div className="container-xs">
+          <div className={innerClasses}>
+            <div className="cta-slogan">
+              <h3 className="invert-color m-0">Get Tangible.</h3>
 
-                            <h6 className="invert-color">
-                                Interested? drop us a line at{" "}
-                                <a href="mailto: info@tangibledata.io">
-                                    info@tangibledata.io
-                                </a>
-                            </h6>
-                        </div>
-                        {/* <div className="cta-action">
+              <h6 className="invert-color">
+                Interested? drop us a line at{' '}
+                <a href="mailto: info@tangibledata.io">info@tangibledata.io</a>
+              </h6>
+            </div>
+            {/* <div className="cta-action">
                             <Input
                                 id="newsletter"
                                 hint="Your information will never be shared."
@@ -79,14 +75,14 @@ const Cta = ({
                                 </svg>
                             </Input>
                         </div> */}
-                    </div>
-                </div>
-            </div>
-        </section>
-    );
-};
+          </div>
+        </div>
+      </div>
+    </section>
+  )
+}
 
-Cta.propTypes = propTypes;
-Cta.defaultProps = defaultProps;
+Cta.propTypes = propTypes
+Cta.defaultProps = defaultProps
 
-export default Cta;
+export default Cta

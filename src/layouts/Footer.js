@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import classNames from "classnames";
 import FooterNav from "./FooterNav";
-// import FooterSocial from "./partials/FooterSocial";
+import FooterSocial from "./FooterSocial";
 
 const propTypes = {
     topOuterDivider: PropTypes.bool,
@@ -27,7 +27,7 @@ const Footer = ({ className, topOuterDivider, topDivider, ...props }) => {
                 <div className={classNames("site-footer-inner")}>
                     <div className="footer-top space-between text-xxs">
                         <h6 className="invert-color">Tangible</h6>
-                        {/* <FooterSocial /> */}
+                        <FooterSocial />
 
                         <a href="mailto: info@tangibledata.io">
                             info@tangibledata.io

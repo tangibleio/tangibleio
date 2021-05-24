@@ -5,6 +5,7 @@ import Dre from '../components/sections/Dre'
 import TeamSection from '../components/sections/TeamSection'
 import PartnersSection from '../components/sections/PartnersSection'
 import PlatfromVideo from '../components/sections/PlatfromVideo'
+import Cta from '../components/sections/Cta'
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
       <Dre split />
       <PlatfromVideo />
       <FeaturesSplit id="features" />
+      <Cta />
       <PartnersSection />
       <TeamSection id="team" />
     </>
