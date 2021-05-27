@@ -62,7 +62,7 @@ const TeamSection = ({
                 <div className="features-tiles-item-header">
                   <div className="features-tiles-item-image mb-16">
                     <Image
-                      src={require('./../../assets/images/an.png')}
+                      src={require('./../../assets/images/an.png').default}
                       width={256}
                       height={256}
                     />
@@ -86,7 +86,7 @@ const TeamSection = ({
                 <div className="features-tiles-item-header">
                   <div className="features-tiles-item-image mb-16">
                     <Image
-                      src={require('./../../assets/images/rd.png')}
+                      src={require('./../../assets/images/rd.png').default}
                       width={256}
                       height={256}
                     />
@@ -111,7 +111,7 @@ const TeamSection = ({
                 <div className="features-tiles-item-header">
                   <div className="features-tiles-item-image mb-16">
                     <Image
-                      src={require('./../../assets/images/bg.png')}
+                      src={require('./../../assets/images/bg.png').default}
                       width={256}
                       height={256}
                     />

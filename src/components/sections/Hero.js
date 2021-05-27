@@ -1,6 +1,7 @@
 import React from 'react'
 import classNames from 'classnames'
 import { SectionProps } from '../../utils/SectionProps'
+import ReactPlayer from 'react-player'
 
 const propTypes = {
   ...SectionProps.types,
@@ -25,7 +26,6 @@ const Hero = ({
     'has-bg-color',
     className,
     'has-bg-color',
-
   )
 
   const innerClasses = classNames(
@@ -38,7 +38,7 @@ const Hero = ({
     <>
       <section {...props} className={outerClasses}>
         <div className="vimeo-wrapper">
-          <iframe
+          {/* <iframe
             width="560"
             height="315"
             src="https://www.youtube.com/embed/uUKIKml17AU?rel=0&controls=0&autoplay=1&mute=1&loop=1&playlist=uUKIKml17AU"
@@ -46,7 +46,17 @@ const Hero = ({
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
-          ></iframe>
+          ></iframe> */}
+          <ReactPlayer
+            url={'https://www.youtube.com/embed/uUKIKml17AU'}
+            playing={true}
+            controls={false}
+            muted
+            className="react-player"
+            loop
+            width="100%"
+            height="100%"
+          />
         </div>
         <div className="container-fh">
           <div className={innerClasses}>

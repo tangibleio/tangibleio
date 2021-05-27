@@ -61,7 +61,7 @@ const PartnersSection = ({
                 <div className="features-tiles-item-header">
                   <div className="features-tiles-item-image mb-16">
                     <Image
-                      src={require('./../../assets/images/partners/mit.png')}
+                      src={require('./../../assets/images/partners/mit.png').default}
                       width={100}
                       height={100}
                     />
@@ -80,7 +80,7 @@ const PartnersSection = ({
                 <div className="features-tiles-item-header">
                   <div className="features-tiles-item-image mb-16">
                     <Image
-                      src={require('./../../assets/images/partners/cs.png')}
+                      src={require('./../../assets/images/partners/cs.png').default}
                       width={100}
                       height={100}
                     />
@@ -101,7 +101,7 @@ const PartnersSection = ({
                 <div className="features-tiles-item-header">
                   <div className="features-tiles-item-image mb-16">
                     <Image
-                      src={require('./../../assets/images/partners/designx.png')}
+                      src={require('./../../assets/images/partners/designx.png').default}
                       width={100}
                       height={100}
                     />
