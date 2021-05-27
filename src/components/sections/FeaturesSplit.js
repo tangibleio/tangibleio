@@ -80,7 +80,7 @@ const FeaturesSplit = ({
                 data-reveal-container=".split-item"
               >
                 <Image
-                  src={require('./../../assets/images/hero/hero_1.png').default}
+                  src={require('./../../assets/images/hero/hero_1.png')}
                   alt="Features split 01"
                   width={528}
                   height={396}
@@ -113,7 +113,7 @@ const FeaturesSplit = ({
                 data-reveal-container=".split-item"
               >
                 <Image
-                  src={require('./../../assets/images/hero/hero_0.jpg').default}
+                  src={require('./../../assets/images/hero/hero_0.jpg')}
                   alt="Features split 02"
                   width={528}
                   height={396}
@@ -146,7 +146,7 @@ const FeaturesSplit = ({
                 data-reveal-container=".split-item"
               >
                 <Image
-                  src={require('./../../assets/images/hero/hero_2.png').default}
+                  src={require('./../../assets/images/hero/hero_2.png')}
                   alt="Features split 02"
                   width={528}
                   height={396}
