@@ -2,9 +2,9 @@ import React from "react";
 import classNames from "classnames";
 import { SectionSplitProps } from "../../utils/SectionProps";
 import Image from "../elements/Image";
-import hero_0 from "../../assets/images/hero/hero_0.jpg";
-import hero_1 from "../../assets/images/hero/hero_1.png";
-import hero_2 from "../../assets/images/hero/hero_2.png";
+import hero_0 from "../../assets/images/hero/hero_0.jpeg";
+import hero_1 from "../../assets/images/hero/hero_1.jpeg";
+import hero_2 from "../../assets/images/hero/hero_2.jpeg";
 
 const propTypes = {
   ...SectionSplitProps.types,
