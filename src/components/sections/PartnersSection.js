@@ -1,15 +1,19 @@
-import React from 'react'
-import classNames from 'classnames'
-import { SectionTilesProps } from '../../utils/SectionProps'
-import Image from '../elements/Image'
+import React from "react";
+import classNames from "classnames";
+import { SectionTilesProps } from "../../utils/SectionProps";
+import Image from "../elements/Image";
+
+import mit from "./../../assets/images/partners/mit.png";
+import cs from "./../../assets/images/partners/cs.png";
+import designx from "./../../assets/images/partners/designx.png";
 
 const propTypes = {
   ...SectionTilesProps.types,
-}
+};
 
 const defaultProps = {
   ...SectionTilesProps.defaults,
-}
+};
 const PartnersSection = ({
   className,
   topOuterDivider,
@@ -22,24 +26,24 @@ const PartnersSection = ({
   ...props
 }) => {
   const outerClasses = classNames(
-    'features-tiles section',
-    topOuterDivider && 'has-top-divider',
-    bottomOuterDivider && 'has-bottom-divider',
-    hasBgColor && 'has-bg-color',
-    invertColor && 'invert-color',
-    className,
-  )
+    "features-tiles section",
+    topOuterDivider && "has-top-divider",
+    bottomOuterDivider && "has-bottom-divider",
+    hasBgColor && "has-bg-color",
+    invertColor && "invert-color",
+    className
+  );
 
   const innerClasses = classNames(
-    'features-tiles-inner section-inner pt-64',
-    topDivider && 'has-top-divider',
-    bottomDivider && 'has-bottom-divider',
-  )
+    "features-tiles-inner section-inner pt-64",
+    topDivider && "has-top-divider",
+    bottomDivider && "has-bottom-divider"
+  );
 
   const tilesClasses = classNames(
-    'tiles-wrap center-content',
-    pushLeft && 'push-left',
-  )
+    "tiles-wrap center-content",
+    pushLeft && "push-left"
+  );
 
   return (
     <section {...props} className={outerClasses}>
@@ -60,11 +64,7 @@ const PartnersSection = ({
               <div className="tiles-item-inner">
                 <div className="features-tiles-item-header">
                   <div className="features-tiles-item-image mb-16">
-                    <Image
-                      src={require('./../../assets/images/partners/mit.png')}
-                      width={100}
-                      height={100}
-                    />
+                    <Image src={mit} width={100} height={100} />
                   </div>
                 </div>
                 <div className="features-tiles-item-content">
@@ -79,11 +79,7 @@ const PartnersSection = ({
               <div className="tiles-item-inner">
                 <div className="features-tiles-item-header">
                   <div className="features-tiles-item-image mb-16">
-                    <Image
-                      src={require('./../../assets/images/partners/cs.png')}
-                      width={100}
-                      height={100}
-                    />
+                    <Image src={cs} width={100} height={100} />
                   </div>
                 </div>
                 <div className="features-tiles-item-content">
@@ -100,11 +96,7 @@ const PartnersSection = ({
               <div className="tiles-item-inner">
                 <div className="features-tiles-item-header">
                   <div className="features-tiles-item-image mb-16">
-                    <Image
-                      src={require('./../../assets/images/partners/designx.png')}
-                      width={100}
-                      height={100}
-                    />
+                    <Image src={designx} width={100} height={100} />
                   </div>
                 </div>
                 <div className="features-tiles-item-content">
@@ -116,10 +108,10 @@ const PartnersSection = ({
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-PartnersSection.propTypes = propTypes
-PartnersSection.defaultProps = defaultProps
+PartnersSection.propTypes = propTypes;
+PartnersSection.defaultProps = defaultProps;
 
-export default PartnersSection
+export default PartnersSection;

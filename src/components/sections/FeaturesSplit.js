@@ -1,15 +1,18 @@
-import React from 'react'
-import classNames from 'classnames'
-import { SectionSplitProps } from '../../utils/SectionProps'
-import Image from '../elements/Image'
+import React from "react";
+import classNames from "classnames";
+import { SectionSplitProps } from "../../utils/SectionProps";
+import Image from "../elements/Image";
+import hero_0 from "../../assets/images/hero/hero_0.jpg";
+import hero_1 from "../../assets/images/hero/hero_1.png";
+import hero_2 from "../../assets/images/hero/hero_2.png";
 
 const propTypes = {
   ...SectionSplitProps.types,
-}
+};
 
 const defaultProps = {
   ...SectionSplitProps.defaults,
-}
+};
 
 const FeaturesSplit = ({
   className,
@@ -26,26 +29,26 @@ const FeaturesSplit = ({
   ...props
 }) => {
   const outerClasses = classNames(
-    'features-split section',
-    topOuterDivider && 'has-top-divider',
-    bottomOuterDivider && 'has-bottom-divider',
-    hasBgColor && 'has-bg-color',
-    invertColor && 'invert-color',
-    className,
-  )
+    "features-split section",
+    topOuterDivider && "has-top-divider",
+    bottomOuterDivider && "has-bottom-divider",
+    hasBgColor && "has-bg-color",
+    invertColor && "invert-color",
+    className
+  );
 
   const innerClasses = classNames(
-    'features-split-inner section-inner',
-    topDivider && 'has-top-divider',
-    bottomDivider && 'has-bottom-divider',
-  )
+    "features-split-inner section-inner",
+    topDivider && "has-top-divider",
+    bottomDivider && "has-bottom-divider"
+  );
 
   const splitClasses = classNames(
-    'split-wrap',
-    invertMobile && 'invert-mobile',
-    invertDesktop && 'invert-desktop',
-    alignTop && 'align-top',
-  )
+    "split-wrap",
+    invertMobile && "invert-mobile",
+    invertDesktop && "invert-desktop",
+    alignTop && "align-top"
+  );
 
   return (
     <section {...props} className={outerClasses}>
@@ -74,13 +77,13 @@ const FeaturesSplit = ({
               </div>
               <div
                 className={classNames(
-                  'split-item-image center-content-mobile reveal-from-bottom',
-                  imageFill && 'split-item-image-fill',
+                  "split-item-image center-content-mobile reveal-from-bottom",
+                  imageFill && "split-item-image-fill"
                 )}
                 data-reveal-container=".split-item"
               >
                 <Image
-                  src={require('./../../assets/images/hero/hero_1.png')}
+                  src={hero_0}
                   alt="Features split 01"
                   width={528}
                   height={396}
@@ -107,13 +110,13 @@ const FeaturesSplit = ({
               </div>
               <div
                 className={classNames(
-                  'split-item-image center-content-mobile reveal-from-bottom',
-                  imageFill && 'split-item-image-fill',
+                  "split-item-image center-content-mobile reveal-from-bottom",
+                  imageFill && "split-item-image-fill"
                 )}
                 data-reveal-container=".split-item"
               >
                 <Image
-                  src={require('./../../assets/images/hero/hero_0.jpg')}
+                  src={hero_1}
                   alt="Features split 02"
                   width={528}
                   height={396}
@@ -140,13 +143,13 @@ const FeaturesSplit = ({
               </div>
               <div
                 className={classNames(
-                  'split-item-image center-content-mobile reveal-from-bottom',
-                  imageFill && 'split-item-image-fill',
+                  "split-item-image center-content-mobile reveal-from-bottom",
+                  imageFill && "split-item-image-fill"
                 )}
                 data-reveal-container=".split-item"
               >
                 <Image
-                  src={require('./../../assets/images/hero/hero_2.png')}
+                  src={hero_2}
                   alt="Features split 02"
                   width={528}
                   height={396}
@@ -157,10 +160,10 @@ const FeaturesSplit = ({
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-FeaturesSplit.propTypes = propTypes
-FeaturesSplit.defaultProps = defaultProps
+FeaturesSplit.propTypes = propTypes;
+FeaturesSplit.defaultProps = defaultProps;
 
-export default FeaturesSplit
+export default FeaturesSplit;

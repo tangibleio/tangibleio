@@ -1,15 +1,18 @@
-import React from 'react'
-import classNames from 'classnames'
-import { SectionTilesProps } from '../../utils/SectionProps'
-import Image from '../elements/Image'
+import React from "react";
+import classNames from "classnames";
+import { SectionTilesProps } from "../../utils/SectionProps";
+import Image from "../elements/Image";
 
+import an from "./../../assets/images/an.png";
+import rd from "./../../assets/images/rd.png";
+import bg from "./../../assets/images/bg.png";
 const propTypes = {
   ...SectionTilesProps.types,
-}
+};
 
 const defaultProps = {
   ...SectionTilesProps.defaults,
-}
+};
 const TeamSection = ({
   className,
   topOuterDivider,
@@ -22,24 +25,24 @@ const TeamSection = ({
   ...props
 }) => {
   const outerClasses = classNames(
-    'features-tiles section',
-    topOuterDivider && 'has-top-divider',
-    bottomOuterDivider && 'has-bottom-divider',
-    hasBgColor && 'has-bg-color',
-    invertColor && 'invert-color',
-    className,
-  )
+    "features-tiles section",
+    topOuterDivider && "has-top-divider",
+    bottomOuterDivider && "has-bottom-divider",
+    hasBgColor && "has-bg-color",
+    invertColor && "invert-color",
+    className
+  );
 
   const innerClasses = classNames(
-    'features-tiles-inner section-inner pt-64',
-    topDivider && 'has-top-divider',
-    bottomDivider && 'has-bottom-divider',
-  )
+    "features-tiles-inner section-inner pt-64",
+    topDivider && "has-top-divider",
+    bottomDivider && "has-bottom-divider"
+  );
 
   const tilesClasses = classNames(
-    'tiles-wrap center-content',
-    pushLeft && 'push-left',
-  )
+    "tiles-wrap center-content",
+    pushLeft && "push-left"
+  );
 
   return (
     <section {...props} className={outerClasses}>
@@ -61,11 +64,7 @@ const TeamSection = ({
               <div className="tiles-item-inner">
                 <div className="features-tiles-item-header">
                   <div className="features-tiles-item-image mb-16">
-                    <Image
-                      src={require('./../../assets/images/an.png')}
-                      width={256}
-                      height={256}
-                    />
+                    <Image src={an} width={256} height={256} />
                   </div>
                 </div>
                 <div className="features-tiles-item-content">
@@ -85,11 +84,7 @@ const TeamSection = ({
               <div className="tiles-item-inner">
                 <div className="features-tiles-item-header">
                   <div className="features-tiles-item-image mb-16">
-                    <Image
-                      src={require('./../../assets/images/rd.png')}
-                      width={256}
-                      height={256}
-                    />
+                    <Image src={rd} width={256} height={256} />
                   </div>
                 </div>
                 <div className="features-tiles-item-content">
@@ -110,11 +105,7 @@ const TeamSection = ({
               <div className="tiles-item-inner">
                 <div className="features-tiles-item-header">
                   <div className="features-tiles-item-image mb-16">
-                    <Image
-                      src={require('./../../assets/images/bg.png')}
-                      width={256}
-                      height={256}
-                    />
+                    <Image src={bg} width={256} height={256} />
                   </div>
                 </div>
                 <div className="features-tiles-item-content">
@@ -130,10 +121,10 @@ const TeamSection = ({
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-TeamSection.propTypes = propTypes
-TeamSection.defaultProps = defaultProps
+TeamSection.propTypes = propTypes;
+TeamSection.defaultProps = defaultProps;
 
-export default TeamSection
+export default TeamSection;

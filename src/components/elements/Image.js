@@ -30,6 +30,7 @@ const Image = ({ className, src, width, height, alt, ...props }) => {
     };
 
     const handlePlaceholder = (img) => {
+        console.log(img);
         const placeholder = document.createElement("img");
         if (!loaded) {
             img.style.display = "none";
