@@ -254,7 +254,7 @@ textarea.form-input {
     background: color-bg(switch);
 
     &::before {
-      content: '';
+      content: "";
       display: block;
       position: absolute;
       top: 2px;
@@ -296,7 +296,7 @@ textarea.form-input {
     display: block;
   }
 
-  input[type='range'] {
+  input[type="range"] {
     -moz-appearance: none;
     -webkit-appearance: none;
     background: color-bg(range-track);
@@ -422,8 +422,8 @@ textarea.form-input {
   .form-radio {
     input {
       &:checked {
-        background-color: color-bg(check-checked-inverse) !important;
-        border-color: color-bg(check-checked-inverse) !important;
+        background-color: color-bg(check-checked-inverse);
+        border-color: color-bg(check-checked-inverse);
       }
     }
   }
@@ -441,7 +441,7 @@ textarea.form-input {
   }
 
   .form-slider {
-    input[type='range'] {
+    input[type="range"] {
       background: color-bg(range-track-inverse);
 
       &::-webkit-slider-thumb {
@@ -508,7 +508,7 @@ textarea.form-input {
   margin-top: $form-hint--margin;
 }
 
-@include media('<=medium') {
+@include media("<=medium") {
   .form-group-desktop {
     .form-input {
       margin-bottom: $button-form--group-padding;
@@ -531,7 +531,7 @@ textarea.form-input {
   }
 }
 
-@include media('>medium') {
+@include media(">medium") {
   .form-group-desktop {
     display: flex;
 
