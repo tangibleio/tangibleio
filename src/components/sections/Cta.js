@@ -1,18 +1,18 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import classNames from 'classnames'
-import { SectionProps } from '../../utils/SectionProps'
+import React from "react";
+import PropTypes from "prop-types";
+import classNames from "classnames";
+import { SectionProps } from "../../utils/SectionProps";
 // import Input from "../elements/Input";
 
 const propTypes = {
   ...SectionProps.types,
   split: PropTypes.bool,
-}
+};
 
 const defaultProps = {
   ...SectionProps.defaults,
   split: false,
-}
+};
 
 const Cta = ({
   className,
@@ -26,19 +26,19 @@ const Cta = ({
   ...props
 }) => {
   const outerClasses = classNames(
-    'cta section center-content-mobile reveal-from-bottom',
-    topOuterDivider && 'has-top-divider',
-    bottomOuterDivider && 'has-bottom-divider',
-    invertColor && 'invert-color',
-    className,
-  )
+    "cta section center-content-mobile reveal-from-bottom",
+    topOuterDivider && "has-top-divider",
+    bottomOuterDivider && "has-bottom-divider",
+    invertColor && "invert-color",
+    className
+  );
 
   const innerClasses = classNames(
-    'cta-inner section-inner has-shadow',
-    topDivider && 'has-top-divider',
-    bottomDivider && 'has-bottom-divider',
-    split && 'cta-split',
-  )
+    "cta-inner section-inner has-shadow",
+    topDivider && "has-top-divider",
+    bottomDivider && "has-bottom-divider",
+    split && "cta-split"
+  );
 
   return (
     <section {...props} className={outerClasses}>
@@ -49,8 +49,8 @@ const Cta = ({
               <h3 className="invert-color m-0">Get Tangible.</h3>
 
               <h6 className="invert-color">
-                Interested? drop us a line at{' '}
-                <a href="mailto: info@tangibledata.io">info@tangibledata.io</a>
+                Interested? drop us a line at{" "}
+                <a href="mailto: info@tangible.city">info@tangible.city</a>
               </h6>
             </div>
             {/* <div className="cta-action">
@@ -79,10 +79,10 @@ const Cta = ({
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-Cta.propTypes = propTypes
-Cta.defaultProps = defaultProps
+Cta.propTypes = propTypes;
+Cta.defaultProps = defaultProps;
 
-export default Cta
+export default Cta;

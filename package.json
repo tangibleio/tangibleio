@@ -1,6 +1,6 @@
 {
   "name": "tangible",
-  "homepage": "https://tangibledata.io",
+  "homepage": "https://tangible.city",
   "main": "src/index.js",
   "private": true,
   "dependencies": {

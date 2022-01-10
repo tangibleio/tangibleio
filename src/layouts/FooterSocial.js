@@ -21,7 +21,7 @@ const FooterSocial = ({ className, ...props }) => {
           </a>
         </li>
         <li>
-          <a href="https://www.linkedin.com/company/tangibledata">
+          <a href="https://www.linkedin.com/company/tangiblecity">
             <svg
               width="16"
               height="16"
