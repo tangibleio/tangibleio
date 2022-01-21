@@ -48,7 +48,9 @@ const Hero = ({
             allowFullScreen
           ></iframe> */}
           <ReactPlayer
-            url={'https://www.youtube.com/embed/uUKIKml17AU'}
+            url={'https://www.youtube.com/embed/IBSW2XI6geo'}
+            
+          
             playing={true}
             controls={false}
             muted

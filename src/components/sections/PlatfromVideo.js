@@ -1,15 +1,15 @@
-import React from 'react'
-import classNames from 'classnames'
-import { SectionTilesProps } from '../../utils/SectionProps'
+import React from "react";
+import classNames from "classnames";
+import { SectionTilesProps } from "../../utils/SectionProps";
 
-import ReactPlayer from 'react-player'
+import ReactPlayer from "react-player";
 const propTypes = {
   ...SectionTilesProps.types,
-}
+};
 
 const defaultProps = {
   ...SectionTilesProps.defaults,
-}
+};
 const PlatfromVideo = ({
   className,
   topOuterDivider,
@@ -21,7 +21,7 @@ const PlatfromVideo = ({
   pushLeft,
   ...props
 }) => {
-  const outerClasses = classNames('features-tiles section')
+  const outerClasses = classNames("features-tiles section");
 
   return (
     <section {...props} className={outerClasses}>
@@ -36,22 +36,22 @@ const PlatfromVideo = ({
         </h4>
         <div className="player-wrapper">
           <ReactPlayer
-            url={'https://youtu.be/85fMtE18w9Q'}
+            url={"https://youtu.be/VjZbM4wi16E"}
             playing={true}
             controls={false}
             muted
             className="react-player"
             loop
             width="100%"
-            height="100%"
+            height="89%"
           />
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-PlatfromVideo.propTypes = propTypes
-PlatfromVideo.defaultProps = defaultProps
+PlatfromVideo.propTypes = propTypes;
+PlatfromVideo.defaultProps = defaultProps;
 
-export default PlatfromVideo
+export default PlatfromVideo;
