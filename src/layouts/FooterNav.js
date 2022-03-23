@@ -19,15 +19,6 @@ const FooterNav = ({ className, ...props }) => {
           <Link to="/#team">Team</Link>
         </li>
 
-        <li>
-          <a
-            rel="noopener noreferrer"
-            href="https://master.d21x7jmmbknvuw.amplifyapp.com/"
-            target="_blank"
-          >
-            Login
-          </a>
-        </li>
       </ul>
     </nav>
   );

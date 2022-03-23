@@ -133,14 +133,6 @@ const Header = ({
                         Team
                       </Link>
                     </li>
-
-                    <a
-                      rel="noopener noreferrer"
-                      href="https://master.d21x7jmmbknvuw.amplifyapp.com/"
-                      target="_blank"
-                    >
-                      Login
-                    </a>
                   </ul>
                 </div>
               </nav>
