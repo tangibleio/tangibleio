@@ -10,7 +10,6 @@ import {
   OrbitControls,
   RandomizedLight,
   AccumulativeShadows,
-  
 } from "@react-three/drei";
 import { MeshRefractionMaterial } from "./shaders/MeshRefractionMaterial";
 
@@ -99,7 +98,7 @@ export function App() {
         colorBlend={5}
         toneMapped={true}
         alphaTest={1.1}
-        opacity={.5}
+        opacity={0.5}
         scale={500}
         position={[1, -1, 2]}
       >
@@ -149,10 +148,10 @@ function Text({
     ref.current.visible = true;
   });
 
-  const { width, height } = useThree(state => state.viewport)
-console.log(width, height)
-// screen aspect ratio
-const aspect = width / height;
+  const { width, height } = useThree((state) => state.viewport);
+  console.log(width, height);
+  // screen aspect ratio
+  const aspect = width / height;
 
   return (
     <>
@@ -162,7 +161,7 @@ const aspect = width / height;
             castShadow
             bevelEnabled
             font={font}
-            scale={9* aspect}
+            scale={5.5 * aspect}
             letterSpacing={-0.175}
             height={0.25}
             bevelSize={0.01}
