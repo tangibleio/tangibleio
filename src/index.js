@@ -1,26 +1,44 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import { Router, HashRouter } from "react-router-dom";
-import { createBrowserHistory } from "history";
+import { createRoot } from "react-dom/client";
+import "./styles.css";
+import { App } from "./App";
 
-import App from "./App";
-import * as serviceWorker from "./serviceWorker";
+function Overlay() {
+  return (
+    <div
+      style={{
+        position: "absolute",
+        top: 0,
+        left: 0,
+        pointerEvents: "none",
+        width: "100%",
+        height: "100%",
+      }}
+    >
+      <div
+        style={{
+          position: "absolute",
+          bottom: "5%",
+          left: "5%",
+          fontSize: "25px",
+        }}
+      >
+        <b>Tangible</b>
 
-//import './App.css';
-import "./assets/scss/style.scss";
+        <div
+          style={{
+            fontSize: "15px",
+          }}
+        >
+          coming soon.
+        </div>
+      </div>
+    </div>
+  );
+}
 
-const history = createBrowserHistory();
-
-ReactDOM.render(
-    <Router history={history}>
-        <HashRouter basename="/">
-            <App />
-        </HashRouter>
-    </Router>,
-    document.getElementById("root")
+createRoot(document.getElementById("root")).render(
+  <>
+    <App />
+    <Overlay />
+  </>
 );
-
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
