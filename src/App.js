@@ -15,18 +15,19 @@ import { MeshRefractionMaterial } from "./shaders/MeshRefractionMaterial";
 
 export function App() {
   const text = "Tangible";
-  const shadow = "#630b29";
+  const shadow = "#000000";
   const autoRotate = true;
   const config = {
     clearcoat: 1,
-    clearcoatRoughness: 0.5,
-    uRefractPower: 2,
-    uTransparent: 2.5,
-    uIntensity: 1.3,
+    clearcoatRoughness: .25,
+    uRefractPower: 1,
+    uTransparent: .5,
+    uIntensity: .3,
     uNoise: 0.05,
     gNoise: 0.05,
     uSat: 1.0,
-    uColor: "#e91e63",
+    // uColor: "#e91e63",
+    uColor: "#000000",
     gColor: "#000000",
   };
 
@@ -34,7 +35,7 @@ export function App() {
     <Canvas
       shadows
       orthographic
-      camera={{ position: [-20, 0, 50], zoom: 30 }}
+      camera={{ position: [-20, 100, 10], zoom: 35 }}
       gl={{ preserveDrawingBuffer: true }}
     >
       <color attach="background" args={["#f2f2f5"]} />
@@ -42,14 +43,14 @@ export function App() {
       <Text
         config={config}
         rotation={[-Math.PI / 4, 0, 0]}
-        position={[0, 0, 5]}
+        position={[0, -2, 5]}
       >
         {text}
       </Text>
       {/** Controls */}
       <OrbitControls
         autoRotate={autoRotate}
-        autoRotateSpeed={-0.3}
+        autoRotateSpeed={-0.5}
         enableZoom={false}
         enablePan={false}
         dampingFactor={0.05}
@@ -127,7 +128,8 @@ function Text({
   const fbo = useFBO(1024);
   const texture = useLoader(
     RGBELoader,
-    "https://dl.polyhaven.org/file/ph-assets/HDRIs/hdr/1k/aerodynamics_workshop_1k.hdr"
+    // "https://dl.polyhaven.org/file/ph-assets/HDRIs/hdr/1k/aerodynamics_workshop_1k.hdr"
+    "https://dl.polyhaven.org/file/ph-assets/HDRIs/hdr/1k/studio_small_08_1k.hdr"
   );
 
   let oldBg;
@@ -156,18 +158,18 @@ function Text({
   return (
     <>
       <group ref={ref}>
-        <Center scale={[0.8, 0.9, 1.5]} front top {...props}>
+        <Center scale={[0.9, 0.9, 1.5]} front top {...props}>
           <Text3D
             castShadow
             bevelEnabled
             font={font}
-            scale={5.5 * aspect}
+            scale={5 * aspect}
             letterSpacing={-0.175}
-            height={0.25}
-            bevelSize={0.01}
+            height={0.35}
+            bevelSize={0.025}
             bevelSegments={10}
             curveSegments={128}
-            bevelThickness={0.01}
+            bevelThickness={0.025}
           >
             {children}
             {/** Pass the rendered buffer into the refraction shader */}
